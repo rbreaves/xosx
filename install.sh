@@ -114,6 +114,9 @@ installArc(){
 		wget -qP ~/Downloads/ $arcx32URL
 		sudo dpkg -i ~/Downloads/$arcx32File
 	fi
+
+	xfconf-query -c xfwm4 -p /general/theme -s 'OSX-Arc-White'
+	xfconf-query -c xfwm4 -p /general/button_layout -s "CHM"
 }
 
 arcElements=$(curl -s https://api.github.com/repos/LinxGem33/OSX-Arc-Darker/releases/latest | jq -r '.tag_name, .assets[0].name, .assets[0].browser_download_url,.assets[1].name, .assets[1].browser_download_url')
