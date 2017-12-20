@@ -91,7 +91,20 @@ else
 	response=${response,,}
 	if [[ $response =~ ^(yes|y| ) ]] || [[ -z $response ]]; then
 		yes | cp -rf ./userprofile/.local/share/konsole ~/.local/share/
+		yes | cp -rf ./userprofile/.local/share/kxmlgui5 ~/.local/share/
+		yes | cp -rf ./userprofile/.config/konsolerc ~/.config/
 	fi
+fi
+
+sudo apt install -y vim
+
+# Install Zsh
+if ! dpkg -s zsh >/dev/null; then
+	echo "Installing zsh..."
+	sudo apt install -y zsh
+	sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+else
+	echo "Zsh already installed."
 fi
 
 # Install Plank
