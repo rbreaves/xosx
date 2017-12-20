@@ -14,6 +14,9 @@ To undo Xmodmap changes type in `setxkbmap -layout "us"` and `rm ~/.Xmodmap && r
 
 Swap left side keys - Alt is Ctrl (to be like Cmd), Super key is Alt, Ctrl is Super key
 
+### Applications this will install
+ vim, konsole, jq, osx-arc-collection, zsh, plank
+
 ### TODO
 
 Create function that reads the xmodmap and recreates new xmodmap files for swapping keys in a manner that aligns with macOS.
