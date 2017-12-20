@@ -14,5 +14,5 @@ Swap left side keys - Alt is Ctrl (to be like Cmd), Super key is Alt, Ctrl is Su
 
 ### TODO
 
-Create function that reads the xmodmap and recreates new xmodmap files for swapping keys.
+Create function that reads the xmodmap and recreates new xmodmap files for swapping keys in a manner that aligns with macOS.
 
