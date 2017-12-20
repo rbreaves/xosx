@@ -6,7 +6,9 @@ This script installs packages and configurations to make xubuntu feel more like 
 
 ### Limitations
 
-At the moment the key swap of Alt, Ctrl, and Super only tested with Lenovo Thinkpads. You can still attempt to apply the Xmodmap file, but it might not work without modification.
+At the moment the key swap of Alt, Ctrl, and Super is only tested with Lenovo Thinkpads. You can still attempt to apply the Xmodmap file, but it might not work without modification.
+
+To undo Xmodmap changes type in `setxkbmap -layout "us"` and `rm ~/.Xmodmap && rm ~/.xinitrc`
 
 ### Changes to Xubuntu
 
