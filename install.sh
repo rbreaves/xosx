@@ -83,6 +83,7 @@ if ! dpkg -s konsole >/dev/null; then
 	echo "Installing Konsole and settings..."
 	sudo apt install -y konsole
 	yes | cp -rf ./userprofile/.local/share/konsole ~/.local/share/
+	yes | cp -rf ./userprofile/.local/share/kxmlgui5 ~/.local/share/
 	yes | cp -rf ./userprofile/.config/konsolerc ~/.config/
 else
 	echo "Konsole already installed."
