@@ -43,6 +43,7 @@ keyswap(){
 			yes | cp -rf./chassis_vendor/$1/.xinitrc ~/.xinitrc
 		fi
 	fi
+	xmodmap ~/.Xmodmap
 }
 
 brand=$(cat /sys/devices/virtual/dmi/id/chassis_vendor)
@@ -59,7 +60,7 @@ else
 	read -r -p "Would you like to apply the xmodmap keyswap anyways? (y/N)" response
 	response=${response,,}
 	if [[ $response =~ ^(yes|y) ]] || [[ -z $response ]]; then
-		keyswap $brand
+		keyswap LENOVO
 	else
 		echo 'Did not apply keyswap.'
 	fi
