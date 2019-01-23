@@ -19,5 +19,10 @@ Swap left side keys - Alt is Ctrl (to be like Cmd), Super key is Alt, Ctrl is Su
 
 ### TODO
 
-Create function that reads the xmodmap and recreates new xmodmap files for swapping keys in a manner that aligns with macOS.
-
+- Install Albert, hide from tray, set hot key ctrl+space, extensions tab enable Applications, Calculator, chrome bookmarks
+- Install Chrome stable by default
+- Plank icon fix - Create systemd service that updates the directory /usr/share/applications with proper app desktop shortcuts, need to track monitor /var/lib/snapd/desktop/applications/ directory for any snap additions. If a new desktop file is added to standard path make sure it has the proper entry in it StartupWMClass.
+- Install Numix Circle icon theme by default
+- Add system tray date format to match osx
+- Systemd service to modify current theme css to apply proper weight vala-menuapp /gtk-3.0/gtk.css
+- Add logic to link konsole.css file to konsole so that tabs will be properly themed. Could be neat to create a background service that always matches the tabs to the konsole bg color automatically.
