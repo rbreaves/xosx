@@ -26,3 +26,5 @@ Swap left side keys - Alt is Ctrl (to be like Cmd), Super key is Alt, Ctrl is Su
 - Add system tray date format to match osx
 - Systemd service to modify current theme css to apply proper weight vala-menuapp /gtk-3.0/gtk.css
 - Add logic to link konsole.css file to konsole so that tabs will be properly themed. Could be neat to create a background service that always matches the tabs to the konsole bg color automatically.
+- Need to add hotcorner lock script and use either xflock4 or lxdm (galliumOS) for login screen
+- Need to add logic for adding .Xmodmap dependent on the keyboard plugged in, may want to create a service that monitors the keyboard being used and automatically modify and fix the xmodmap file used on that.

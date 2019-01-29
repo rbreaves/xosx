@@ -47,6 +47,8 @@ keyswap(){
 }
 
 brand=$(cat /sys/devices/virtual/dmi/id/chassis_vendor)
+model=$(setxkbmap -query | awk -F"(,|[ ]+)" '/model:/ { print $2 }')
+layout=$(setxkbmap -query | awk -F"(,|[ ]+)" '/layout:/ { print $2 }')
 
 if [[ $brand = 'LENOVO' ]]; then
 	read -r -p "Lenovo detected, would you like to install Xmodmap keyswap for IBM Thinkpad? (Y/n)" response
