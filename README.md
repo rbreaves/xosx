@@ -28,3 +28,5 @@ Swap left side keys - Alt is Ctrl (to be like Cmd), Super key is Alt, Ctrl is Su
 - Add logic to link konsole.css file to konsole so that tabs will be properly themed. Could be neat to create a background service that always matches the tabs to the konsole bg color automatically.
 - Need to add hotcorner lock script and use either xflock4 or lxdm (galliumOS) for login screen
 - Need to add logic for adding .Xmodmap dependent on the keyboard plugged in, may want to create a service that monitors the keyboard being used and automatically modify and fix the xmodmap file used on that.
+- Added python3 keyswap file for konsole terminal, need to automate the autostart setup.
+- Need to add xclip and this shortcut command - sh -c 'sleep 0.5; xdotool type "$(xclip -o -selection clipboard)"' to emulate paste into konsole on Super+V.
