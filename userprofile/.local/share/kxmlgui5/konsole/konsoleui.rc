@@ -51,9 +51,11 @@
  </MenuBar>
  <ActionProperties scheme="Default">
   <Action name="clone-tab" shortcut=""/>
-  <Action name="close-window" shortcut="Ctrl+Q"/>
+  <Action name="close-window" shortcut="Meta+Q"/>
   <Action name="help_contents" shortcut=""/>
-  <Action name="new-tab" shortcut="Ctrl+T"/>
-  <Action name="new-window" shortcut="Ctrl+N"/>
+  <Action name="new-tab" shortcut="Meta+T"/>
+  <Action name="new-window" shortcut="Meta+N"/>
+  <Action name="split-view-left-right" shortcut="Meta+("/>
+  <Action name="split-view-top-bottom" shortcut="Meta+)"/>
  </ActionProperties>
 </kpartgui>

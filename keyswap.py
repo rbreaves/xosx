@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#/usr/bin/env python3
 # Credit to Jacob Vlijm
 # https://askubuntu.com/questions/786055/how-can-i-automatically-mute-an-application-when-not-in-focus
 
@@ -36,11 +36,11 @@ while True:
             # a change in the situation
             if front2 != front1:
                 if front2 == True:
-                    cm = ["setxkbmap", "-layout", '"us"']
-                    print("run") # just a test indicator, remove afterwards
+                    cm = ["xmodmap", home + "/.Xmodmap.terminal"]
+                    # print("Terminal Xmodmap") # just a test indicator, remove afterwards
                 else:
-                    cm = ["xmodmap", home + "/.Xmodmap"]
-                    print("stop") # just a test indicator, remove afterwards
+                    cm = ["xmodmap", home + "/.Xmodmap.gui"]
+                    # print("GUI Xmodmap") # just a test indicator, remove afterwards
                 subprocess.Popen(cm)
             front1 = front2
         else:
