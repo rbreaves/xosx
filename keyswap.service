@@ -9,7 +9,7 @@ Group=ryanreaves
 Environment=DISPLAY=:0
 Restart=always
 WorkingDirectory=/home/ryanreaves/.config/
-ExecStart=/usr/bin/python3 /home/ryanreaves/.config/keyswap.py
+ExecStart=/bin/bash /home/ryanreaves/.config/xactive.sh
 
 [Install]
 WantedBy=multi-user.target
