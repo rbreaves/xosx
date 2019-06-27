@@ -1,15 +1,17 @@
+#~/.config/systemd/user
 [Unit]
 Description=keyswap for Terminal and GUI
-After=syslog.target
+PartOf=graphical-session.target
 
 [Service]
 Type=simple
-User=ryanreaves
-Group=ryanreaves
+#User=ryanreaves
+#Group=ryanreaves
 Environment=DISPLAY=:0
 Restart=always
 WorkingDirectory=/home/ryanreaves/.config/
+#ExecStartPre=/bin/sleep 10
 ExecStart=/bin/bash /home/ryanreaves/.config/xactive.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=xsession.target
