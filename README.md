@@ -1,4 +1,10 @@
-# xosx
+## Deprecated by Kinto
+
+If this project interests you then please checkout Kinto. A lot of mistakes were made in these prior attempts. Kinto only uses python for the initial install and a combination of systemd, bash or xsession, depending on your needs. Anyone is welcomed to contribute.
+
+https://github.com/rbreaves/kinto
+
+# ~~xosx~~
 
 Turn Xubuntu into a macOS like experience for powerusers. This is not intended to fully or in part recreate the look of macOS, but mostly just the feel and workflow.
 
